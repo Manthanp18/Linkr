@@ -15,7 +15,7 @@ const Settings = ({ username, avatar }) => {
 
   const removeAvatar = () => {
     axios
-      .patch(` http://localhost:5000/users/${username}/defaultAvatar`, {}, config)
+      .patch(`http://localhost:5000/users/${username}/defaultAvatar`, {}, config)
       .then(res => {
         setUserAvatar(defaultAvatar)
       })
@@ -42,7 +42,7 @@ const Settings = ({ username, avatar }) => {
 
     const getTheme = () => {
       axios
-        .get(` http://localhost:5000/users/admin`, config)
+        .get(`http://localhost:5000/users/admin`, config)
         .then(res => {
           setNewTheme(res.data.theme)
           setUserAvatar(res.data.avatar)

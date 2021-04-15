@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import UserHeader from './UserHeader'
+
 import Link from './Link'
 import NotFound from './NotFound'
 import ClipLoader from 'react-spinners/ClipLoader'
@@ -51,8 +51,8 @@ const UserLinkTree = props => {
     <NotFound />
   ) : (
     <div className={theme === 1 ? 'green-container' : `theme-${theme}`}>
-      <UserHeader username={username} avatar={userAvatar} />
-      <div className='linksList'>
+     
+      <div className='linksList-tree'>
         {links.length > 0 ? (
           links.map(link => <Link key={link._id} link={link} />)
         ) : (

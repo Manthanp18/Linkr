@@ -7,8 +7,6 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
-    "i": "^0.3.6",
-    "npm": "^7.9.0",
     "react": "^17.0.2",
     "react-avatar-editor": "^11.1.0",
     "react-beautiful-dnd": "^13.1.0",
@@ -19,6 +17,7 @@
     "react-scripts": "4.0.3",
     "react-spinners": "^0.10.6",
     "react-svg": "^13.0.1",
+    "use-force-update": "^1.0.7",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

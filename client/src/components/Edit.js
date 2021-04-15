@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ClipLoader from 'react-spinners/ClipLoader'
 import EditableLink from './EditableLink'
-import AdminHeader from './AdminHeader'
 
 const Edit = ({ username }) => {
   const [links, setLinks] = useState([])
@@ -43,7 +42,6 @@ const Edit = ({ username }) => {
     </div>
   ) : (
     <>
-      <AdminHeader edit={'active'} />
       <div className='linksList'>
         {links.length > 0 ? (
           links.map(link => (
@@ -56,7 +54,7 @@ const Edit = ({ username }) => {
             />
           ))
         ) : (
-          <h1>Your Linktree is empty.</h1>
+          <h1>Your Linkr is empty.</h1>
         )}
       </div>
     </>

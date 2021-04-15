@@ -46,7 +46,7 @@ const NewLink = ({ username }) => {
   return (
     <>
       <div className='link-error-msg'>
-        <p id='added'>{added ? 'New Link Added To Your Linktree!' : ''}</p>
+        <p id='added'>{added ? 'New Link Added To Your Link!' : ''}</p>
         <p>{errors.linkTitle ? errors.linkTitle : ''}</p>
         <p>{errors.url ? errors.url : ''}</p>
       </div>

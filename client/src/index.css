@@ -1,6 +1,6 @@
 * {
   font-size: 1rem;
-  font-family: Karla,Helvetica,sans-serif;
+  font-family: Karla, Helvetica, sans-serif;
 }
 
 html {
@@ -13,7 +13,7 @@ body {
 }
 
 h2 {
-  color: #1f1c1c
+  color: #1f1c1c;
 }
 
 .green-container {
@@ -22,15 +22,24 @@ h2 {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: #b6ffef;
   overflow: auto;
 }
 
 .linksList {
+  display:block;
+  color: #1f1c1c;
+  text-align: center;
+  width: 30%;
+  position: relative;
+  margin-left: 100px;
+  
+}
+.linksList-tree {
   display: block;
   color: #1f1c1c;
   text-align: center;
-  max-width: 680px;
+  max-width: 400px;
   position: center;
   margin: auto;
 }
@@ -127,8 +136,6 @@ h2 {
   margin: 5px;
 }
 
-
-
 .login-buttons {
   display: flex;
   justify-content: center;
@@ -153,14 +160,17 @@ h2 {
   width: 100%;
   height: 35vh;
   overflow: hidden;
+  margin:10px 10px 0 0;
 }
 
 .newlink-buttons input {
   margin: 10px;
+  
+  
 }
 
 .newlink-buttons button {
-  height: 82px;
+margin-right: 650px;
 }
 
 .signup-buttons {
@@ -182,7 +192,7 @@ h2 {
 
 .sign-in-button:hover {
   color: rgb(31, 28, 28);
-  background-color: white
+  background-color: white;
 }
 
 .sign-in-button {
@@ -209,27 +219,41 @@ h2 {
   letter-spacing: 1.5px;
   text-align: center;
 }
-
+.linkr-button {
+  margin-right: 750px;
+  background-color: rgb(31, 28, 28);
+  text-decoration: none;
+  padding: 30px 50px 30px 50px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 .user-input {
   background-color: white;
   cursor: auto;
   border-color: rgb(31, 28, 28);
   border-width: 2px;
-  padding: 30px 50px 30px 50px;
+  padding: 10px 10px 10px 10px;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
 
 .user-submit {
+  padding: 10px 10px 10px 10px;
   background-color: rgb(31, 28, 28);
   cursor: pointer;
-  border: none;
-  padding: 30px 50px 30px 50px;
+  border-color: #fff;
+  border-width: 2px;
+
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: white
+  color: rgb(255, 255, 255);
 }
-
+.linkr-button:hover {
+  color: rgb(31, 28, 28);
+  background-color: white;
+}
 .user-submit:hover {
   color: rgb(31, 28, 28);
   background-color: white;
@@ -254,7 +278,7 @@ input {
 .footer a {
   color: white;
   text-decoration: none;
-  font-size: 20px;;
+  font-size: 20px;
 }
 
 .flex-container {
@@ -262,7 +286,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 700px;
+  height: 200px;
 }
 
 .new-link {
@@ -325,7 +349,7 @@ input {
 }
 
 #added {
-  color: white;
+  color: rgb(9, 9, 9);
   font-size: 30px;
 }
 
@@ -343,7 +367,6 @@ input {
   padding: 20px;
   text-decoration: none;
   color: #1f1c1c;
-
 }
 
 .edit-linkTitle {
@@ -419,7 +442,7 @@ input {
   margin-bottom: 60px;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .avatar {
@@ -520,7 +543,6 @@ input {
   #added {
     font-size: 15px;
   }
-
 }
 
 @media only screen and (max-width: 1250px) {
@@ -569,7 +591,7 @@ input {
   .linksList {
     max-width: 480px;
   }
-  
+
   .edit-url-wrap {
     max-width: 320px;
   }

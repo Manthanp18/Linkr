@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   const authedFooter = () => {
     const isAuth = localStorage.getItem('auth-token')
-    if (isAuth) return <Link to='/admin'>linktree-clone</Link>
+    if (isAuth) return <Link to='/admin'>linkr</Link>
 
-    return <Link to='/'>linktree-clone</Link>
+    return <Link to='/'>linkr</Link>
   }
   return (
     <div>
