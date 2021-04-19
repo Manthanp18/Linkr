@@ -25,7 +25,7 @@ const App = () => {
           <Route
             exact
             path='/'
-            component={Home}
+            
             render={() => (isAuth.token ? <Redirect to='/admin' /> : <Home />)}
           />
           <Route

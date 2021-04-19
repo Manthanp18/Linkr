@@ -10,7 +10,7 @@ const Admin = ({ username }) => {
       <div></div>
       <div className='flex-container'>
         <NewLink username={username} />
-        <Link to={`/${username}`} target='_blank' className='sign-in-button'>
+        <Link to={`/${username}`}  className='sign-in-button'>
           {username}'s Linktree
         </Link>
       </div>

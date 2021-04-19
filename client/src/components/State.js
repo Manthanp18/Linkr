@@ -18,7 +18,7 @@ const State = ({ component }) => {
     }
 
     const getName = () => {
-      axios.get(`/users/admin`, config)
+      axios.get(`http://localhost:5000/users/admin`, config)
         .then(res => {
           setUsername(res.data.username);
           setLoading(false);
